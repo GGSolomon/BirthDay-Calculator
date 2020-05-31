@@ -10,24 +10,56 @@
         <h1>Birth Day Calculator</h1>
         <p>Find out the Day or the Week you were born and your Akan Name!</p>
       </div>
-    <div class="container" style="background-color:lavenderblush;">
-    <div class="row">
-        <div class="col-sm-2" style="background-color:lavender;"></div>
-        <div class="col-sm-8" style="background-color:lavenderblush;">
+      <div class="container" >
+        <div class="row" style="margin-top:30px">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" >
           <form class="" action="index.html" method="post">
             <table>
               <tr>
                 <td>
-                  <div class="form-group">
-                    <label for="">Day</label>
+                  <div>
+                    <label for="Day">Day</label>
                     <input type="text" name="day" value="">
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <label for="Month">Month</label>
+                    <input type="text" name="month" >
+                  </div>
+                </td>
+              </tr>
+              <tr >
+                <td>
+                  <div style="margin-top:30px ">
+                    <label for="Year">Year</label>
+                    <input type="text" name="year" >
+                  </div>
+                </td>
+                <td>
+                  <div style="margin-top:30px">
+                    <label for="Gender">Gender</label>
+                    <select type="text" name="gender" >
+                      <option selected disabled value="">--Select Gender--</option>
+                      <option value="M">Male</option>
+                      <option value="F">Female</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top:30px">
+                  <input type="button" class="btn btn-primary" value="Update" onclick="compute(this.form)">
+                  <input type="reset" class="btn btn-danger" value="Clear">
                   </div>
                 </td>
               </tr>
             </table>
           </form>
         </div>
-        <div class="col-sm-2" style="background-color:lavender;"></div>
+        <div class="col-sm-2"></div>
       </div>
 
     </div>
