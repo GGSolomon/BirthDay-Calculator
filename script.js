@@ -36,6 +36,7 @@ gender = new MakeArray(2);
 gender[1] = "Male"
 gender[2] = "Female"
 
+
 //Day of Week Function
 function compute(form) {
    var val1 = parseInt(form.day.value, 10)
@@ -46,6 +47,7 @@ function compute(form) {
    if ((val2 < 0) || (val2 > 12)) {
       alert("Incorrect month range. Please check again!")
    }
+
    var val2x = parseInt(form.month.value, 10)
    var val3 = parseInt(form.year.value, 10)
    if (val3 < 1900) {
@@ -73,14 +75,30 @@ function compute(form) {
    form.result2.value = days[val0]
 
    var akan = days[val0]
-   if(akan === 'Sunday'){
-   alert("You were born on a sunday!")
-   }
+
+   var gender = (form.gender.value)
+
+   var sundayMale = "Kwasi"
+   var mondayMale = "Kwadwo"
+   var tuesdayMale = "Kwabena"
+   var wednesdayMale = "Kwaku"
+   var thursdayMale = "Yaw"
+   var fridayMale = "Kofi"
+   var saturdayMale = "Kwame"
+
+       if(akan === 'Sunday' && gender === 'Male'){
+         form.result3.value = sundayMale  }
+       if(akan === 'Monday' && gender === 'Male'){
+         form.result3.value = mondayMale  }
+       if(akan === 'Tuesday' && gender === 'Male'){
+         form.result3.value = tuesdayMale  }
+       if(akan === 'Wednesday' && gender === 'Male'){
+         form.result3.value = wednesdayMale  }
+       if(akan === 'Thursday' && gender === 'Male'){
+         form.result3.value = thursdayMale  }
+       if(akan === 'Friday' && gender === 'Male'){
+         form.result3.value = fridayMale  }
+       if(akan === 'Saturday' && gender === 'Male'){
+         form.result3.value = saturdayMale
+      }
 }
-//Gender Function
-function compute(form) {
-   var val10 = (form.gender.value)
-   if (val10 === 'Male' ) {
-      alert("You are male")
-   }
- }
