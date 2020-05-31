@@ -50,8 +50,24 @@
   <li>Open index.html on your Browser.</li>
 </ul>
 
+<h2>Development</h2>
+
+<p>Want to contribute or fix a bug?</p>
+
+<P>Please follow these steps:</p>
+
+<ul>
+<li>Fork the repo</li>
+<li>Create a new branch (git checkout -b improve-feature)</li>
+<li>Make the necessary changes in the files</li>
+<li>Add a brief info on the changes made</li>
+<li>Commit the changes (git commit -am 'Improve feature')</li>
+<li>Push to the branch (git push origin improve-feature)</li>
+<li>Create a Pull Request</li>
+</ul>
+
 <h2>License</h2>
-<h3>MIT Copyright (c) 2019 GGSolomon</h3>
+<h3>MIT Copyright (c) 2020 GGSolomon</h3>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sub-license, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
