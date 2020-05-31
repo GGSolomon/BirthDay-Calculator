@@ -31,23 +31,28 @@ months[10] = "October"
 months[11] = "November"
 months[12] = "December"
 
+// gender Array
+gender = new MakeArray(2);
+gender[1] = "Male"
+gender[2] = "Female"
+
 //Day of Week Function
 function compute(form) {
    var val1 = parseInt(form.day.value, 10)
    if ((val1 < 0) || (val1 > 31)) {
-      alert("Incorrect Date Range. Please Check Again")
+      alert("Incorrect date range. Please check again!")
    }
    var val2 = parseInt(form.month.value, 10)
    if ((val2 < 0) || (val2 > 12)) {
-      alert("Incorrect Month Range. Please Check Again")
+      alert("Incorrect month range. Please check again!")
    }
    var val2x = parseInt(form.month.value, 10)
    var val3 = parseInt(form.year.value, 10)
    if (val3 < 1900) {
-      alert("You Cannot be that old!")
+      alert("Incorrect year range. You cannot be that old!")
    }
     if (val3 > 2019) {
-      alert("You Cannot be that young!")
+      alert("Incorrect year range. You cannot be that young!")
    }
    if (val2 == 1) {
       val2x = 13;
@@ -66,7 +71,16 @@ function compute(form) {
    var val0 = val8-(val9*7)
    form.result1.value = months[val2]+" "+form.day.value +", "+form.year.value
    form.result2.value = days[val0]
+
+   var akan = days[val0]
+   if(akan === 'Sunday'){
+   alert("You were born on a sunday!")
+   }
 }
-if(var val0 == Sunday){
-console.log(okay);
-}
+//Gender Function
+function compute(form) {
+   var val10 = (form.gender.value)
+   if (val10 === 'Male' ) {
+      alert("You are male")
+   }
+ }
