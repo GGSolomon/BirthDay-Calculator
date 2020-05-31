@@ -99,6 +99,13 @@ function compute(form) {
        if(akan === 'Friday' && gender === 'Male'){
          form.result3.value = fridayMale  }
        if(akan === 'Saturday' && gender === 'Male'){
-         form.result3.value = saturdayMale
-      }
+         form.result3.value = saturdayMale  }
+
+    var sundayFemale = "Akosua"
+    var mondayFemale = "Adwoa"
+    var tuesdayFemale = "Abenaa"
+    var wednesdayFemale = "Akua"
+    var thursdayFemale = "Yaa"
+    var fridayFemale = "Afua"
+    var saturdayFemale = "Ama"
 }
