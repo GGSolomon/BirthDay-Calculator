@@ -21,13 +21,13 @@
                 <td>
                   <div>
                     <label for="Day">Day</label>
-                    <input type="text" name="day" value="">
+                    <input type="text" name="day" required="true">
                   </div>
                 </td>
                 <td>
                   <div>
                     <label for="Month">Month</label>
-                    <input type="text" name="month" >
+                    <input type="text" name="month" required="true">
                   </div>
                 </td>
               </tr>
@@ -35,7 +35,7 @@
                 <td>
                   <div style="margin-top:30px ">
                     <label for="Year">Year</label>
-                    <input type="text" name="year" >
+                    <input type="text" name="year" required="true">
                   </div>
                 </td>
                 <td>
@@ -52,7 +52,7 @@
               <tr>
                 <td>
                   <div style="margin-top:30px">
-                    <input type="button" class="btn btn-primary" value="Update" onclick="compute(this.form)">
+                    <input type="button" class="btn btn-primary" value="Submit" onclick="compute(this.form)">
                     <input type="reset" class="btn btn-danger" value="Clear">
                   </div>
                 </td>
@@ -60,13 +60,17 @@
               <tr>
                 <td>
                   <div style="margin-top:30px">
-                    <p>Date of Birth: <input TYPE="text" NAME="result1" SIZE="18"> </p>
-                    <p>Day of Week: <input TYPE="text" NAME="result2" SIZE="18"> </p>
+                    <p>Date of Birth: <input type="text" name="result1" > </p>
+                    <p>Day of Week: <input type="text" name="result2"> </p>
+                    <p>Akan Name: <input type="text" name="result3"> </p>
                   </div>
                 </td>
               </tr>
             </table>
           </form>
+
+
+
         </div>
         <div class="col-sm-2"></div>
       </div>

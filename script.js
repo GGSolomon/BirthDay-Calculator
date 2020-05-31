@@ -67,3 +67,6 @@ function compute(form) {
    form.result1.value = months[val2]+" "+form.day.value +", "+form.year.value
    form.result2.value = days[val0]
 }
+if(var val0 == Sunday){
+console.log(okay);
+}
