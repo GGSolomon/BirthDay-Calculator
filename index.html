@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Birth Day Calculator</title>
     <link href="css/bootstrap/css/bootstrap.css" rel ="stylesheet" type="text/css" media="all">
+    <script src="script.js" charset="utf-8"></script>
   </head>
   <body>
       <div class="jumbotron text-center">
@@ -51,8 +52,16 @@
               <tr>
                 <td>
                   <div style="margin-top:30px">
-                  <input type="button" class="btn btn-primary" value="Update" onclick="compute(this.form)">
-                  <input type="reset" class="btn btn-danger" value="Clear">
+                    <input type="button" class="btn btn-primary" value="Update" onclick="compute(this.form)">
+                    <input type="reset" class="btn btn-danger" value="Clear">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-top:30px">
+                    <p>Date of Birth: <input TYPE="text" NAME="result1" SIZE="18"> </p>
+                    <p>Day of Week: <input TYPE="text" NAME="result2" SIZE="18"> </p>
                   </div>
                 </td>
               </tr>
