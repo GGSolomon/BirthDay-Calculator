@@ -108,4 +108,19 @@ function compute(form) {
     var thursdayFemale = "Yaa"
     var fridayFemale = "Afua"
     var saturdayFemale = "Ama"
+
+    if(akan === 'Sunday' && gender === 'Female'){
+      form.result3.value = sundayFemale  }
+    if(akan === 'Monday' && gender === 'Female'){
+      form.result3.value = mondayFemale  }
+    if(akan === 'Tuesday' && gender === 'Female'){
+      form.result3.value = tuesdayFemale  }
+    if(akan === 'Wednesday' && gender === 'Female'){
+      form.result3.value = wednesdayFemale  }
+    if(akan === 'Thursday' && gender === 'Female'){
+      form.result3.value = thursdayFemale  }
+    if(akan === 'Friday' && gender === 'Female'){
+      form.result3.value = fridayFemale  }
+    if(akan === 'Saturday' && gender === 'Female'){
+      form.result3.value = saturdayFemale  }
 }
