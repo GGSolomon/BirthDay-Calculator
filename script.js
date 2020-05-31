@@ -40,27 +40,27 @@ gender[2] = "Female"
 //Day of Week Function
 function compute(form) {
    var val1 = parseInt(form.day.value, 10)
-   if ((val1 < 0) || (val1 > 31)) {
+    if ((val1 < 0) || (val1 > 31)) {
       alert("Incorrect date range. Please check again!")
    }
    var val2 = parseInt(form.month.value, 10)
-   if ((val2 < 0) || (val2 > 12)) {
+    if ((val2 < 0) || (val2 > 12)) {
       alert("Incorrect month range. Please check again!")
    }
 
    var val2x = parseInt(form.month.value, 10)
    var val3 = parseInt(form.year.value, 10)
-   if (val3 < 1900) {
+    if (val3 < 1900) {
       alert("Incorrect year range. You cannot be that old!")
    }
     if (val3 > 2019) {
       alert("Incorrect year range. You cannot be that young!")
    }
-   if (val2 == 1) {
+    if (val2 == 1) {
       val2x = 13;
       val3 = val3-1
    }
-   if (val2 == 2) {
+    if (val2 == 2) {
       val2x = 14;
       val3 = val3-1
    }
@@ -109,18 +109,18 @@ function compute(form) {
     var fridayFemale = "Afua"
     var saturdayFemale = "Ama"
 
-    if(akan === 'Sunday' && gender === 'Female'){
-      form.result3.value = sundayFemale  }
-    if(akan === 'Monday' && gender === 'Female'){
-      form.result3.value = mondayFemale  }
-    if(akan === 'Tuesday' && gender === 'Female'){
-      form.result3.value = tuesdayFemale  }
-    if(akan === 'Wednesday' && gender === 'Female'){
-      form.result3.value = wednesdayFemale  }
-    if(akan === 'Thursday' && gender === 'Female'){
-      form.result3.value = thursdayFemale  }
-    if(akan === 'Friday' && gender === 'Female'){
-      form.result3.value = fridayFemale  }
-    if(akan === 'Saturday' && gender === 'Female'){
-      form.result3.value = saturdayFemale  }
-}
+      if(akan === 'Sunday' && gender === 'Female'){
+        form.result3.value = sundayFemale  }
+      if(akan === 'Monday' && gender === 'Female'){
+        form.result3.value = mondayFemale  }
+      if(akan === 'Tuesday' && gender === 'Female'){
+        form.result3.value = tuesdayFemale  }
+      if(akan === 'Wednesday' && gender === 'Female'){
+        form.result3.value = wednesdayFemale  }
+      if(akan === 'Thursday' && gender === 'Female'){
+        form.result3.value = thursdayFemale  }
+      if(akan === 'Friday' && gender === 'Female'){
+        form.result3.value = fridayFemale  }
+      if(akan === 'Saturday' && gender === 'Female'){
+        form.result3.value = saturdayFemale  }
+  }
